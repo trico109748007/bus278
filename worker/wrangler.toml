@@ -1,0 +1,7 @@
+name = "bus278-proxy"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+# 逗號分隔的允許來源，例如 "https://trico109748007.github.io"；"*" 表示全部允許。
+ALLOWED_ORIGINS = "*"

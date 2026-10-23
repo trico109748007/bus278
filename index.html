@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>278 公車到站</title>
+  <meta name="description" content="278／278區／74 公車到站時間">
+  <meta name="theme-color" content="#3f51b5">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="278">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/bus_kousoku_choukyori.png" alt="" class="logo">
+    <div class="status">
+      <div>更新時間：<span id="updated">—</span></div>
+      <div class="sub"><span id="countdown"></span><span id="error" class="error"></span></div>
+    </div>
+  </header>
+
+  <main id="groups"></main>
+
+  <footer>
+    <button id="refresh" type="button">讀取</button>
+    <button id="openSettings" type="button" class="secondary">設定</button>
+  </footer>
+
+  <dialog id="settings">
+    <form method="dialog" id="settingsForm">
+      <h2>設定</h2>
+      <label>自動更新秒數
+        <input id="interval" type="number" min="10" max="3600" step="1" required>
+      </label>
+      <label>Worker 網址
+        <input id="workerUrl" type="url" placeholder="https://bus278-proxy.xxx.workers.dev" required>
+      </label>
+      <div class="actions">
+        <button value="cancel" type="button" id="cancelSettings" class="secondary">取消</button>
+        <button value="ok" type="submit">儲存</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
