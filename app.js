@@ -1,7 +1,7 @@
 "use strict";
 
 // 部署好 Worker 後可以直接把網址填在這裡；也可以在畫面上的「設定」裡填。
-const DEFAULT_WORKER_URL = "";
+const DEFAULT_WORKER_URL = "https://bus278-proxy.trico109748007.workers.dev";
 const DEFAULT_INTERVAL = 30;
 const MIN_INTERVAL = 10;
 

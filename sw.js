@@ -1,5 +1,5 @@
 // 只快取 App 外殼，讓它能加到主畫面、離線也打得開；到站資料一律走網路。
-const CACHE = "bus278-v1";
+const CACHE = "bus278-v2";
 const SHELL = [
   "./",
   "index.html",
